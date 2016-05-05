@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @aplicator.name %>
+</p>
+
+<p>
+  <strong>Prefix:</strong>
+  <%= @aplicator.prefix %>
+</p>
+
+<p>
+  <strong>Clinic:</strong>
+  <%= @aplicator.clinic %>
+</p>
+
+<p>
+  <strong>Cedprof:</strong>
+  <%= @aplicator.cedProf %>
+</p>
+
+<%= link_to 'Edit', edit_aplicator_path(@aplicator) %> |
+<%= link_to 'Back', aplicators_path %>

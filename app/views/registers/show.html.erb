@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patientid:</strong>
+  <%= @register.patientId %>
+</p>
+
+<p>
+  <strong>Vaccineid:</strong>
+  <%= @register.vaccineId %>
+</p>
+
+<p>
+  <strong>Doctorid:</strong>
+  <%= @register.doctorId %>
+</p>
+
+<p>
+  <strong>Dosisnumber:</strong>
+  <%= @register.dosisNumber %>
+</p>
+
+<%= link_to 'Edit', edit_register_path(@register) %> |
+<%= link_to 'Back', registers_path %>

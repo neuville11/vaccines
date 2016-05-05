@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Aplicators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Prefix</th>
+      <th>Clinic</th>
+      <th>Cedprof</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aplicators.each do |aplicator| %>
+      <tr>
+        <td><%= aplicator.name %></td>
+        <td><%= aplicator.prefix %></td>
+        <td><%= aplicator.clinic %></td>
+        <td><%= aplicator.cedProf %></td>
+        <td><%= link_to 'Show', aplicator %></td>
+        <td><%= link_to 'Edit', edit_aplicator_path(aplicator) %></td>
+        <td><%= link_to 'Destroy', aplicator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aplicator', new_aplicator_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patientId: 1
+  vaccineId: 1
+  doctorId: 1
+  dosisNumber: 1
+
+two:
+  patientId: 1
+  vaccineId: 1
+  doctorId: 1
+  dosisNumber: 1
