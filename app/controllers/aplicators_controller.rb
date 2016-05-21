@@ -4,9 +4,12 @@ class AplicatorsController < ApplicationController
   # GET /aplicators
   # GET /aplicators.json
   def index
-    @aplicators = Aplicator.all
+    
   end
 
+  def aplicator
+    @aplicators = Aplicator.all
+  end
   # GET /aplicators/1
   # GET /aplicators/1.json
   def show
